@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Triathlon calculator v1.0</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="calc">
+        <div class="calc__headder">
+            <h1>Triathlon calculator</h1>
+        </div>
+        <div id="distance" class="calc__distance">
+        </div>
+        <div class="calc__activity table__line">
+            <h2 class="table_column">Swim</h2>
+            <h2 class="table_column">T1</h2>
+            <h2 class="table_column">Bike</h2>
+            <h2 class="table_column">T2</h2>
+            <h2 class="table_column">Run</h2>
+        </div>
+        <div class="calc__activity__distances table__line">
+            <h3 class="table_column" id="swim-distance"></h3>
+            <h3 class="table_column"></h3>
+            <h3 class="table_column" id="bike-distance"></h3>
+            <h3 class="table_column"></h3>
+            <h3 class="table_column" id="run-distance"></h3>
+        </div>
+        <div class="calc__pace table__line">
+            <div class="calc__swim table_column ">
+                <div class="calc__swim__pace column__border">
+                    <h4>Swim pace</h4>
+                    <h5>min/100 m</h5>                    
+                    <input type="text" id="swim-pace" name="swim-pace">
+                    <h6>[mm:ss]</h6>
+                </div>
+                <div class="calc__swim__time column__border">
+                    <h4>Swim time</h4>
+                    <input type="text" id="swim-time" name="swim-time">
+                    <h6>[hh:mm:ss]</h6>
+                </div>
+            </div>
+            <div class="calc__t table_column column__border">
+                <div class="calc__t__time">
+                    <h4>T1 time</h4>
+                    <input class="input" type="text" id="t1-time" name="t1-time">
+                    <h6>[mm:ss]</h6>
+                </div>
+            </div>
+            <div class="calc__bike table_column">
+                <div class="calc__bike__pace column__border">
+                    <h4>Bike pace</h4>
+                    <h5>km/h</h5>
+                    <input type="text" id="bike-pace" name="bike-pace">
+                    <h6>[00.00]</h6>
+                </div>
+                <div class="calc__bike__time column__border">
+                    <h4>Bike time</h4>
+                    <input type="text" id="bike-time" name="bike-time">
+                    <h6>[hh:mm:ss]</h6>
+                </div>
+            </div>
+            <div class="calc__t table_column column__border ">
+                <div class="calc__t__time ">
+                    <h4>T2 time</h4>
+                    <input class="input" type="text" id="t2-time" name="t2-time">
+                    <h6>[mm:ss]</h6>
+                </div>
+            </div>
+            <div class="calc__run table_column">
+                <div class="calc__run__pace column__border">
+                    <h4>Run pace</h4>
+                    <h5>min/km</h5>
+                    <input type="text" id="run-pace" name="run-pace">
+                    <h6>[mm:ss]</h6>
+                </div>
+                <div class="calc__run__time column__border">
+                    <h4>Run time</h4>
+                    <input type="text" id="run-time" name="run-time">
+                    <h6>[hh:mm:ss]</h6>
+                </div>
+            </div>
+        </div>
+        <div class="calc__finish">
+            <h2>Finish time</h2>
+            <h1 id="final-time"></h1>
+        </div>
+               
+    </main>
+
+    <script async src="script.js"></script>
+
+</body>
+</html>
